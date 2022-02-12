@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e0dc8a4a-fb36-4c52-a655-b5b2f373044c": {
+      "ProjectGuid": "e0dc8a4a-fb36-4c52-a655-b5b2f373044c",
+      "DisplayName": "SupermarketManagementSystem",
+      "ColorIndex": 0
+    },
+    "d8787341-50c5-4352-bf65-f0e713d6bd3f": {
+      "ProjectGuid": "d8787341-50c5-4352-bf65-f0e713d6bd3f",
+      "DisplayName": "UseCases",
+      "ColorIndex": 1
+    },
+    "6ec919cc-50e9-443c-945c-7c6da0cd66da": {
+      "ProjectGuid": "6ec919cc-50e9-443c-945c-7c6da0cd66da",
+      "DisplayName": "CoreBusiness",
+      "ColorIndex": 2
+    },
+    "18be54b0-7fcf-4d89-9181-653bd85aee27": {
+      "ProjectGuid": "18be54b0-7fcf-4d89-9181-653bd85aee27",
+      "DisplayName": "WebApp",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
