@@ -1,6 +1,6 @@
 ﻿using CoreBusiness;
 
-namespace UseCases
+namespace UseCases.UseCaseInterfaces
 {
     public interface IViewCategoriesUseCase
     {

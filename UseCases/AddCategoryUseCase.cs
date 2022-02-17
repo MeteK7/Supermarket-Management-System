@@ -9,18 +9,18 @@ using UseCases.UseCaseInterfaces;
 
 namespace UseCases
 {
-    public class ViewCategoriesUseCase : IViewCategoriesUseCase
+    public class AddCategoryUseCase : IAddCategoryUseCase
     {
         private readonly ICategoryRepository categoryRepository;
 
-        public ViewCategoriesUseCase(ICategoryRepository categoryRepsitory)
+        public AddCategoryUseCase(ICategoryRepository categoryRepository)
         {
-            this.categoryRepository = categoryRepsitory;
+            this.categoryRepository = categoryRepository;
         }
 
-        public IEnumerable<Category> Execute()
+        public void Execute(Category category)
         {
-            return categoryRepository.GetCategories();
+            categoryRepository.AddCategory(category);
         }
     }
 }
