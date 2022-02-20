@@ -1,10 +1,14 @@
 ﻿@page "/addcategory"
+@using UseCases.UseCaseInterfaces
+
+@inject NavigationManager NavigationManager
+@inject IAddCategoryUseCase AddCategoryUseCase
 
 <h3>Add Category</h3>
 
 @if (category != null)
 {
-    <EditForm Model="category" class="form-inline" OnValidSubmit="OnValidSubmit">
+    <EditForm Model="category" OnValidSubmit="OnValidSubmit">
         <DataAnnotationsValidator></DataAnnotationsValidator>
         <ValidationSummary></ValidationSummary>
 
@@ -19,6 +23,7 @@
         </div>
 
         <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-danger" @onclick="OnCancel">Cancel</button>
     </EditForm>
 }
 
@@ -34,6 +39,12 @@
 
     private void OnValidSubmit()
     {
-        
+        AddCategoryUseCase.Execute(category);
+        NavigationManager.NavigateTo("/categories");
+    }
+
+    private void OnCancel()
+    {
+        NavigationManager.NavigateTo("/categories");
     }
 }
