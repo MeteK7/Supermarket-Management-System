@@ -5,10 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using UseCases.DataStorePluginInterfaces;
+using UseCases.UseCaseInterfaces;
 
 namespace UseCases
 {
-    public class GetCategoryByIdUseCase
+    public class GetCategoryByIdUseCase : IGetCategoryByIdUseCase
     {
         private readonly ICategoryRepository _categoryRepository;
         public GetCategoryByIdUseCase(ICategoryRepository categoryRepository)
